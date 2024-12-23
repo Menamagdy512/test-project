@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #4a1d96, #7e22ce, #f472b6);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .background-wave {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 15rem;
+    background-color: rgba(147, 51, 234, 0.2);
+    border-radius: 100%;
+  }
+  
+  .background-wave-bottom {
+    bottom: -50px;
+    transform: translateX(70%);
+  }
+  
+  .background-wave-top {
+    top: -50px;
+    transform: translateX(-70%);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-icon img {
+    width: 30px ;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    color: #2F80ED;
+    font-weight: bold;
+  }
+  
+  header .menu-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 7%;
+    transform: translateY(-50%);
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 8rem);
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 96px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    font-family:"Roboto", Poppins;
+    font-weight: 400;
+    line-height: 144px;
+  }
+  
+  .subtitle {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-family:"Roboto", Poppins;
+
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .countdown-digits {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .countdown-digit {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    width: 4rem;
+    height: 5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .countdown-digit-text {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .countdown-label {
+    color: white;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family:"Roboto", Poppins;
+    font-weight: 400;
+    line-height: 72px;
+
+  }
+  
+  .notification-form {
+    display: flex;
+    width: 100%;
+    max-width: 40rem;
+  }
+  
+  .notification-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: none;
+    font-family:"Roboto", Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+
+  }
+  
+  .notification-button {
+    padding: 1rem 1.5rem;
+    background-color: #22d3ee;
+    color: white;
+    border-radius: 0 0.5rem 0.5rem 0;
+    transition: background-color 0.3s;
+    border: none;
+    font-family:"Roboto", Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  .notification-button:hover {
+    background-color: #06b6d4;
+  }
+  
+  .social-links {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .social-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 5rem;
+    }
+  }
+  
+  
